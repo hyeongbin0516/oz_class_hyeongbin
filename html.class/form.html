@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="IE=edge">
+        <title>설문조사</title>
+    </head>
+    <body>
+        <header>
+            <h1>설문조사</h1>
+        </header>
+    </body>
+    <hr>
+    <main>
+        <form>
+            <fieldset>
+                <legend>개인정보</legend>
+                <label for="name">이름</label>
+                <input type="text" id="name" placeholder="정확히 입력해주세요">
+                <br>
+                <label for="age" id="age">나이</label>
+                <input type="radio" id="teen" name="age">
+                <label for="teen">10대</label>
+                <input type="radio" id="twenty" name="age">
+                <label for="twenty">20대</label>
+                <input type="radio" id="thirty" name="age">
+                <label for="thirty">30대</label>
+                <input type="radio" id="fourty" name="age">
+                <label for="fourty">40대</label>
+                <input type="radio" id="fifty" name="age">
+                <label for="fifty">50대</label>
+                <input type="radio" id="other" name="age">
+                <label for="other">그 외</label>
+                <br>
+                <label for="gender">성별</label>
+                <input type="radio" id="man" name="gender">
+                <label for="man">남</label>
+                <input type="radio" id="woman" name="gender">
+                <label for="woman">여</label>
+            </fieldset>
+            <fieldset>
+                <legend>설문</legend>
+                <h5>*중복 선택 가능</h5>
+                <p>최근에 시청한 영화 장르는?</p>
+                <label for="horror">호러</label>
+                <input type="checkbox" id="horror" name="movie">
+                <label for="comedy">코미디</label>
+                <input type="checkbox" id="comedy" name="movie">
+                <label for="action">액션</label>
+                <input type="checkbox" id="action" name="movie">
+                <label for="romance">로맨스</label>
+                <input type="checkbox" id="romance" name="movie">
+                <label for="ot">그 외</label>
+                <input type="text" id="ot" name="movie">
+                <br>
+                <p>영화를 선택할때 기준은?</p>
+                <label for="actor">배우</label>
+                <input type="checkbox" id="actor" name="movie">
+                <label for="genre">장르</label>
+                <input type="checkbox" id="genre" name="movie">
+                <label for="detail">내용</label>
+                <input type="checkbox" id="detail" name="movie">
+                <label for="evaluation">주위 평가</label>
+                <input type="checkbox" id="evaluation" name="movie">
+                <label for="ot">그 외</label>
+                <input type="text" id="ot" name="movie">
+            </fieldset>
+            <fieldset>
+                <legend>기타</legend>
+                <textarea rows="3" cols="30" name="comment"></textarea>
+            </fieldset>
+        </form>
+    </main>
+    <hr>
+    <footer>
+        감사합니다.
+    </footer>
+
+</html>
