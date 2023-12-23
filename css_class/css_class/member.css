@@ -1,0 +1,30 @@
+*{
+    text-align: center;
+    background-color: hwb(311 87% 5%);
+    font-family: 'Dongle', sans-serif;
+    font-family: 'Single Day', cursive;
+}
+
+.text{
+    background-color:#cdf0ee;
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 30px;
+    width: 300px;
+}
+
+.email{
+    background-color:#cdf0ee;
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 30px;
+    width: 138px;
+}
+
+.age{
+    background-color:#cdf0ee;
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 30px;
+    width: 95px;
+}

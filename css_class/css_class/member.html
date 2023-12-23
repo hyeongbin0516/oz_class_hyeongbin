@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="IE=edge">
+        <title>회원가입</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Single+Day&display=swap" rel="stylesheet">
+        <link href="member.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1>회원가입</h1>
+        </header>
+        <hr>
+        <div class="member">
+            <div>
+                <b class="user">이름</b><br>
+                <input class="text" type="text" id="name" placeholder="정확히 입력해주세요"><br><br>
+            </div>
+            <div>
+                <b class="user">생년월일</b><br>
+                <input class="age" type="text" id="year" placeholder="4자리">
+                <select class="age" id="month">
+                    <option value="1"> 월 </option>
+                    <option value="1"> 1 </option>
+                    <option value="2"> 2 </option>
+                    <option value="3"> 3 </option>
+                    <option value="4"> 4 </option>
+                    <option value="5"> 5 </option>
+                    <option value="6"> 6 </option>
+                    <option value="7"> 7 </option>
+                    <option value="8"> 8 </option>
+                    <option value="9"> 9 </option>
+                    <option value="10"> 10 </option>
+                    <option value="11"> 11 </option>
+                    <option value="12"> 12 </option>
+                </select>
+                <input class="age" type="text" id="day" placeholder="일"><br><br>
+            </div>
+            <div>
+                <b class="user">아이디</b><br>
+                <input class="text" type="text" name="ID" placeholder="아이디"><br><br>
+            </div>
+            <div>
+                <b class="user">패스워드</b><br>
+                <input class="text" type="password" name="PW" placeholder="패스워드"><br><br>
+            </div>
+            <div>
+                <b class="user">전화번호</b><br>
+                <input class="text" type="phone" name="PH" placeholder="'-'제외"><br><br>
+            </div>
+            <div>
+                <b class="user">email</b><br>
+                <input class="email" type="email" name="email" placeholder="E-mail"> @
+                <select class="email" id="select">
+                    <option value="first"> 선택 </option>
+                    <option value="gmail"> gmail.com </option>
+                    <option value="naver"> naver.com </option>
+                    <option value="daum"> daum.net </option>
+                    <option value="nate"> nate.com </option>
+                </select>
+                <br><br><br>
+            </div> 
+            </div>
+        </div>    
+    </body>
+    <hr>
+    <footer>
+        환영합니다.
+    </footer>
+
+</html>

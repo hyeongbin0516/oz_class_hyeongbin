@@ -1,0 +1,26 @@
+*{
+    text-align: center;
+    font-family: 'Dongle', sans-serif;
+    font-family: 'Single Day', cursive;
+    background-color: #ecf3c5;
+}
+
+img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50px;
+}
+
+fieldset{
+    width: 500px;
+    margin: 15px 10px 15px 330px;
+    height: 150px;
+}
+.age{
+    background-color:hsl(0, 0%, 100%);
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 50px;
+    width: 110px;
+    margin-top: 15px;
+}

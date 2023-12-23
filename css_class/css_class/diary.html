@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="IE=edge">
+        <title>다이어리</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Single+Day&display=swap" rel="stylesheet">
+        <link href="diary.css" rel="stylesheet">
+    </head>
+    <body>
+        <img 
+            src="img/IMG_1515.jpeg" 
+            alt="짱구"
+            width="200"
+        >
+        <h1>형빈이의 하루</h1>
+        <hr>
+        <fieldset>
+            <legend>오늘 날짜</legend>
+            <div>
+                <br>
+                <input class="age" type="text" id="year" placeholder="4자리">
+                <select class="age" id="month">
+                    <option value="1"> 월 </option>
+                    <option value="1"> 1 </option>
+                    <option value="2"> 2 </option>
+                    <option value="3"> 3 </option>
+                    <option value="4"> 4 </option>
+                    <option value="5"> 5 </option>
+                    <option value="6"> 6 </option>
+                    <option value="7"> 7 </option>
+                    <option value="8"> 8 </option>
+                    <option value="9"> 9 </option>
+                    <option value="10"> 10 </option>
+                    <option value="11"> 11 </option>
+                    <option value="12"> 12 </option>
+                </select>
+                <input class="age" type="text" id="day" placeholder="일"><br><br>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>날씨</legend>
+            <div class="rd">
+                <input type="radio" id="vgood" name="weather">
+                <label for="vgood">매우좋음</label>
+                <input type="radio" id="good" name="weather">
+                <label for="good">좋음</label>
+                <input type="radio" id="soso" name="weather">
+                <label for="soso">보통</label>
+                <input type="radio" id="bad" name="weather">
+                <label for="bad">나쁨</label>
+                <input type="radio" id="vbad" name="weather">
+                <label for="vbad">매우나쁨</label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>하루 일과</legend>
+            <textarea 
+                rows="7" 
+                cols="80" 
+                name="comment"
+                style="background-color: #ffffff;">
+        </textarea>
+        </fieldset>
+        <fieldset>
+            <legend>내일 할일</legend>
+            <textarea 
+                rows="7" 
+                cols="80" 
+                name="comment"
+                style="background-color: #ffffff;">
+            </textarea>
+        </fieldset>
+    </body>
+</html>
