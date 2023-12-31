@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>미스테리숫자</title>
+    <style>
+        *{
+            background-color: rgb(51, 51, 51);
+            text-align: center;
+            color: white;
+        }
+        #text{
+            width: 200px;
+            height: 30px;
+            background-color: white;
+            border: 2px solid blue;
+            border-radius: 5px;
+        }
+        .btn{
+            width: 50px;
+            height: 35px;
+            border: 2px solid orange;
+            border-radius: 5px;
+            color: orange;
+
+        }
+    </style>
+</head>
+<body>
+    <h2>Mystery Number 맞추기</h2>
+    <p>1부터 100사이의 숫자를 입력하세요!</p>
+    <form id="form">
+        <div id="container">
+            <input type="number" id="text" style='color: black'>
+            <input type="button" value="뚜둥!" class="btn" onclick="check()">
+        </div>
+    </form>
+
+
+    <script>
+            const N = Math.floor(Math.random() * 100) + 1;
+            console.log(N); 
+
+
+            function check() {
+                const t = parseInt(document.getElementById('text').value);
+                if (t < N) {
+                    alert('더 큰 수를 입력하세요!');
+                } else if (t > N) {
+                    alert('더 작은 수를 입력하세요!');
+                } else {
+                    alert('정답입니다!');
+                    const put = document.createElement("input")
+                    input.input = "다시하기"
+                    document.body.append(put)
+                }
+            }
+    </script>
+</body>
+</html>

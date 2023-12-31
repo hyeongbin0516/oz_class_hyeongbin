@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>슬라이드</title>
+        <link rel="stylesheet" href="c_main.css">
+    </head>
+
+    <body>
+        <div style="overflow: hidden;">
+            <div class="container">
+                <div class="cat">
+                    <img src="img/cat_1.jpeg">
+                </div>
+                <div class="cat">
+                    <img src="img/cat_2.jpeg">
+                </div>
+                <div class="cat">
+                    <img src="img/cat_3.jpeg">
+                </div>
+            </div>
+        </div>
+
+        <button class="bt1">1</button>
+        <button class="bt2">2</button>
+        <button class="bt3">3</button>
+    
+        <script>
+            document.querySelector('.bt1').addEventListener('click', function(){
+                document.querySelector('.container').style.transform = 'translate(0vw)';
+            })
+            
+            document.querySelector('.bt2').addEventListener('click', function(){
+                document.querySelector('.container').style.transform = 'translate(-100vw)';
+            })
+
+            document.querySelector('.bt3').addEventListener('click', function(){
+                document.querySelector('.container').style.transform = 'translate(-200vw)';
+            })
+        </script>
+    </body>
+</html>

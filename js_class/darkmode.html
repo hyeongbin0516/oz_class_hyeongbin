@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>darkmode</title>
+
+        <style>
+            .dark-mode {
+                background-color: black;
+                color: white;
+            }
+            .light-mode {
+                background-color: white;
+                color: black;
+            }
+        </style>
+    </head>
+    <body>
+       <button onclick="bt_d_mode()">D_mode</button>
+       <button onclick="bt_l_mode()">L-mode</button>
+       <script>
+            function bt_d_mode(){
+                var body = document.body;
+                body.classList.toggle("dark-mode");
+            }
+            function bt_l_mode(){
+                var body = document.body;
+                body.classList.toggle("light-mode");
+            }
+       </script>
+       
+    </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>성적 확인</title>
+    </head>
+    <body>
+        <h1>성적 확인</h1>
+        <p id="check"></p>
+        <script>
+            const grade = Number(prompt('점수를 입력하세요'));
+
+            let result;
+
+            if(grade >= 90){
+                result = 'A';
+            } else if(grade >= 80){
+                result = 'B'   
+            } else if(grade >= 70){
+                result = 'c'   
+            } else if(grade >= 60){
+                result = 'D'   
+            } else {
+                result = 'F'
+            }
+
+            document.getElementById('check').innerText = `당신의 학점은 ${result} 입니다.`;
+        </script>
+    </body>
+</html>
