@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>계산기</title>
+        <link rel="stylesheet" href="calculator.css">
+    </head>
+    <body>
+        <h2>계산기 만들기</h2>
+        <form name="calculator">
+            <div class="display">
+                <input class="text" type="text" name="display" id="display" readonly>
+            </div>
+            <div class="buttons">
+                
+                <input class="button" type="button" value="7" onclick="appendNumber('7')">
+                <input class="button" type="button" value="8" onclick="appendNumber('8')">
+                <input class="button" type="button" value="9" onclick="appendNumber('9')">
+                <input class="button" type="button" value="/" onclick="appendOperator('/')">
+            
+                <input class="button" type="button" value="4" onclick="appendNumber('4')">
+                <input class="button" type="button" value="5" onclick="appendNumber('5')">
+                <input class="button" type="button" value="6" onclick="appendNumber('6')">
+                <input class="button" type="button" value="*" onclick="appendOperator('*')">
+            
+                <input class="button" type="button" value="1" onclick="appendNumber('1')">
+                <input class="button" type="button" value="2" onclick="appendNumber('2')">
+                <input class="button" type="button" value="3" onclick="appendNumber('3')">
+                <input class="button" type="button" value="-" onclick="appendOperator('-')">
+                
+                <input class="button" type="button" value="C" onclick="clearDisplay()">
+                <input class="button" type="button" value="0" onclick="appendNumber('0')">
+                <input class="button" type="button" value="=" onclick="calculate()">
+                <input class="button"type="button" value="+" onclick="appendOperator('+')">
+            </div>
+            
+        </form>
+
+        <script>
+            function appendNumber(num) {
+                document.calculator.display.value += num;
+            }
+
+            function appendOperator(operator) {
+                document.calculator.display.value += operator;
+            }
+
+            function appendDecimal() {
+                var currentDisplay = document.calculator.display.value;
+                if (currentDisplay.indexOf('.') === -1) {
+                    document.calculator.display.value += '.';
+                }
+            }
+
+            function clearDisplay() {
+                document.calculator.display.value = '';
+            }
+
+            function calculate() {
+                try {
+                    document.calculator.display.value = eval(document.calculator.display.value);
+                } catch (err) {
+                    document.calculator.display.value = 'Error';
+                }
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실시간 날짜와 시간 및 올해 남은 시간</title>
+
+</head>
+<body>
+
+    <h2>현재 날짜와 시간</h2>
+    <p id="datetime"></p>
+
+    <h2>올해 남은 시간</h2>
+    <p id="remainingTime"></p>
+
+    <script>
+        function updateDateTime() {
+            var dateTimeElement = document.getElementById('datetime');
+            var currentDate = new Date();
+
+            var options = {
+                weekday: 'long',
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric',
+                hour: 'numeric',
+                minute: 'numeric',
+                second: 'numeric',
+                timeZoneName: 'short'
+            };
+
+            var formattedDateTime = currentDate.toLocaleDateString('en-US', options);
+            dateTimeElement.innerHTML = formattedDateTime;
+
+            var remainingTimeElement = document.getElementById('remainingTime');
+            var endOfYear = new Date(currentDate.getFullYear() + 1, 0, 1);
+            var timeRemaining = endOfYear - currentDate;
+
+            var daysRemaining = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+            var hoursRemaining = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutesRemaining = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+            var secondsRemaining = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+
+            var remainingTimeText = daysRemaining + "일 " + hoursRemaining + "시간 " + minutesRemaining + "분 " + secondsRemaining + "초";
+            remainingTimeElement.innerHTML = "올해 남은 시간: " + remainingTimeText;
+        }
+
+        // 1초마다 날짜와 시간 업데이트
+        setInterval(updateDateTime, 1000);
+
+        // 페이지 로드 시 초기 업데이트
+        window.onload = function () {
+            updateDateTime();
+        };
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>구구단 계산기</title>
+</head>
+<body>
+    <table border="1" align="center" width="750" height="250">
+        <caption>구구단</caption>
+        <tr>    
+            <script>
+                document.write("<tr>")
+                for(var i = 2; i <= 9; i++){
+                    document.write("<th>"+i+"단</th>")
+                }
+                document.write("</tr>")
+
+
+                for(var i = 2; i<=9; i++) {
+                    document.write("<td>")
+                    for(var j = 1; j<=9; j++) {
+                        document.write(i + " * " + j + " = " + (i*j), "<br>");
+                    }
+                    document.write("</td>")
+                }
+            </script>
+        </tr>
+    </table>
+</body>
+</html>
